@@ -12,11 +12,6 @@ import sys
 # The function accepts STRING_ARRAY unsorted as parameter.
 #
 
-def random_with_up_to_N_digits(n):
-    range_start = 1
-    range_end = (10**n)-1
-    return random.randint(range_start, range_end)
-
 def bigSorting(unsorted):
     # Write your code here
     sorted_list = []
