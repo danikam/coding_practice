@@ -37,8 +37,6 @@ def test_sort():
         random_int = random.randint(1, 1e100)
         test_list.append(str(random_int))
         test_array = np.append(test_array, random_int)
-    #test_list = test_list + ['3', '3', '3']
-    #test_array = np.append(test_array, np.array([3, 3, 3]))
     sorted_array = np.sort(test_array)
     sorted_str = []
     for element in sorted_array:
