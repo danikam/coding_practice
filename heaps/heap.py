@@ -117,7 +117,32 @@ def delete_minHeap(array, size, value):
             minHeap(array, size-1)
             return size-1
     return size-1
-            
+    
+class MedianFinder:
+    def __init__(self):
+        # Min-heap to store the larger half of the numbers
+        self.min_heap = []
+        # Max-heap to store the smaller half of the numbers (as negative values)
+        self.max_heap = []
+    
+    def addNum(self, num):
+        # Add code to add a number to either the min heap or the max heap, depending on its value
+        num+=1
+        
+    def findMedian(self):
+        # Add code to find the median of the values added using the min and max heaps
+        return 0
+
+# Some basic code to check the median finder
+mf = MedianFinder()
+mf.addNum(1)
+mf.addNum(2)
+print(mf.findMedian())  # Output: 1.5
+mf.addNum(3)
+print(mf.findMedian())  # Output: 2
+
+"""
+# Some checks of the min and max heap functions
 x = [3,9,2,1,4,5]
 maxHeap(x, len(x))
 print(x)
@@ -132,5 +157,4 @@ size = insert_minHeap(x, size, 7)
 print(x)
 size = delete_minHeap(x, size, 1)
 print(x)
-
-
+"""
